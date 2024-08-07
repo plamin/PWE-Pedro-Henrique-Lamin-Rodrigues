@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Eventos - IFSP - Pirituba</title>
+  <script src="js/disabling.js"></script>
+  <style>
+    * {
+      margin: 8px 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="cabecalho"> <!-- Indica o cabeçalho do nosso documento-->
+    <nav>
+      <object width="100%" height="65px" data="menu.html"></object>
+    </nav>
+  </header>
+
+  <img src="Imagens/Logo.jpg" alt=" " />
+
+  <h1>Inscreva-se</h1>
+
+  <form name="evento">
+    <fieldset>
+      Evento
+      <select name="evento" required>
+        <option value="">-- Selecione --</option>
+        <option value="voe">Voe sem asas</option>
+        <option value="festa">Festa junina</option>
+        <option value="semana">Semana de tecnologia</option>
+      </select>
+    </fieldset>
+
+    <fieldset name="Informações de Acesso">
+      <legend>Informações de Acesso</legend>
+      <div>
+        Usuário <input type="text" placeholder="Usuario" required>
+      </div>
+      <div>
+        Senha <input type="password" placeholder="Senha" required>
+      </div>
+      <div>
+        Confirme a senha <input type="text" placeholder="Confirma a senha" required>
+      </div>
+    </fieldset>
+
+    <fieldset name="Informações Pessoais">
+      <legend>Informações Pessoais</legend>
+      <div>
+        Nome Completo <input type="text" placeholder="Nome completo" required>
+      </div>
+      <div>
+        E-mail <input type="email" placeholder="Email" required>
+      </div>
+      <div>
+        Celular <input type="tel" placeholder="(00) 00000-0000" required> (99) 99999-9999
+      </div>
+
+      <fieldset>
+        <legend>Sexo</legend>
+        <div>
+          <label for="masc">Masculino</label>
+          <input type="radio" name="sexo" value="masc" id="masc">
+          <label for="masc">Feminino</label>
+          <input type="radio" name="sexo" value="Feminino" id="Feminino">
+        </div>
+      </fieldset>
+
+      <div>
+        Data de Nascimento <input type="date" required>
+      </div>
+
+      <div>
+        Cor favorita <input type="color" required>
+      </div>
+
+      Perfil no Github <input type="url" placeholder="https://github.com/usuario" required>
+    </fieldset>
+
+    <button type="submit" form="evento">Inscrever</button>
+    <input type="reset" value="Limpar" />
+  </form>
+</body>
+
+</html>
